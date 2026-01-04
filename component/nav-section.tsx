@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { FC } from "react";
+import { NavList } from "./client-component";
 
 export const NavSection: FC = () => {
   return (
     <div>
       <div>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground">
-          Clark
+          Clark Catle
         </h1>
 
         <h2 className="mt-3 text-lg font-medium tracking-tight text-foreground sm:text-xl">
@@ -20,19 +21,7 @@ export const NavSection: FC = () => {
 
         <nav className="hidden lg:block mt-16 w-max">
           <ul className="flex flex-col gap-4">
-            {["About", "Projects", "Skills", "Achievements"].map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="group flex items-center py-3 active"
-                >
-                  <span className="mr-4 h-px w-8 bg-muted-foreground transition-all group-hover:w-16 group-hover:bg-foreground group-focus:w-16 group-focus:bg-foreground"></span>
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground group-focus:text-foreground">
-                    {item}
-                  </span>
-                </a>
-              </li>
-            ))}
+            <NavList />
           </ul>
         </nav>
       </div>
@@ -103,7 +92,7 @@ export const NavSection: FC = () => {
             xmlns="http://www.w3.org/2000/svg"
             stroke="#000000"
             strokeWidth="40"
-            paint-order="stroke"
+            paintOrder="stroke"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const AboutSection: FC = () => {
   return (
-    <section id="about" className="scroll-mt-16 lg:scroll-mt-24">
+    <section id="about">
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-foreground lg:sr-only">
           About

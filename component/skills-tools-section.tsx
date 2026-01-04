@@ -35,11 +35,11 @@ export const SkillsAndToolsSection: FC = () => {
   };
 
   return (
-    <section id="skills" className="scroll-mt-16 lg:scroll-mt-24">
+    <>
       {Object.entries(skillsAndTools).map((val, i) => (
-        <div key={i}>
-          <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-foreground lg:sr-only">
+        <section id={val[0].toLocaleLowerCase()} key={i}>
+          <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 lg:bg-transparent px-6 py-5 backdrop-blur lg:relative lg:top-auto lg:mx-auto lg:w-full">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-foreground">
               {val[0]}
             </h2>
           </div>
@@ -54,8 +54,8 @@ export const SkillsAndToolsSection: FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       ))}
-    </section>
+    </>
   );
 };

@@ -56,7 +56,7 @@ export const PersonalProjects: FC = () => {
     //   </div>
     // </div>
 
-    <section id="projects" className="scroll-mt-16 lg:scroll-mt-24">
+    <section id="projects">
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-foreground lg:sr-only">
           Projects
@@ -71,17 +71,17 @@ export const PersonalProjects: FC = () => {
           >
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
 
-            <div className="z-10 sm:col-span-2">
+            <div className="z-10 grid place-items-center sm:col-span-3">
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
-                width={200}
-                height={120}
-                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                width={300}
+                height={220}
+                className="rounded border-2 p-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
               />
             </div>
 
-            <div className="z-10 sm:col-span-6">
+            <div className="z-10 sm:col-span-5">
               <h3 className="font-medium leading-tight text-foreground group-hover:text-primary transition-colors inline-flex items-baseline">
                 <span className="absolute -inset-x-4 -inset-y-4 hidden rounded md:-inset-x-6 md:-inset-y-6 lg:block"></span>
 
@@ -97,10 +97,10 @@ export const PersonalProjects: FC = () => {
 
               <ul className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <li key={tag}>
-                    <div className="bg-primary/10 text-primary hover:bg-primary/20 border-none">
+                  <li key={tag} className="grid place-items-center">
+                    <p className="bg-primary/10 text-primary hover:bg-primary/20 border-none text-xs font-semibold py-1 px-3 rounded-full">
                       {tag}
-                    </div>
+                    </p>
                   </li>
                 ))}
               </ul>

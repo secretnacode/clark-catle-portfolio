@@ -68,8 +68,6 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -118,15 +116,7 @@
     );
     background-attachment: fixed;
   }
-}
-
-/* Custom scrollbar for better aesthetic */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  @apply bg-background;
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-muted rounded-full hover:bg-muted-foreground transition-colors;
+  .active-nav {
+    @apply w-16! bg-foreground!;
+  }
 }
