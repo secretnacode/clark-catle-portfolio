@@ -4,14 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated design tokens to match the professional, dark-themed inspiration */
   --background: oklch(0.12 0.02 250);
   --foreground: oklch(0.92 0.02 250);
   --card: oklch(0.15 0.02 250);
   --card-foreground: oklch(0.92 0.02 250);
   --popover: oklch(0.15 0.02 250);
   --popover-foreground: oklch(0.92 0.02 250);
-  --primary: oklch(0.85 0.12 180); /* Soft teal accent */
+  --primary: oklch(0.85 0.12 180);
   --primary-foreground: oklch(0.12 0.02 250);
   --secondary: oklch(0.25 0.02 250);
   --secondary-foreground: oklch(0.92 0.02 250);
@@ -110,9 +109,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
   body {
     @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary;
     background-image: radial-gradient(
@@ -128,9 +124,9 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
-/* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   @apply bg-background;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-muted rounded-full hover:bg-muted-foreground transition-colors;
-} */
+}
