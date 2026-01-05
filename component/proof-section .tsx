@@ -26,8 +26,9 @@ export const ProofSection: FC = () => {
               </p>
 
               <Link
-                href="#"
+                href="https://drive.google.com/drive/folders/1ev8ahhVeLynqMOMvTgiAN6mRSxHFNQ2U?usp=sharing"
                 className="mt-4 inline-flex items-center text-sm font-medium text-primary hover:underline"
+                target="_blank"
               >
                 View Gallery <ExternalLink className="ml-1 h-3 w-3" />
               </Link>

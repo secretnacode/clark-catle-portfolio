@@ -108,7 +108,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground selection:bg-primary/30 selection:text-primary;
+    @apply bg-background text-foreground;
     background-image: radial-gradient(
       circle at 50% -20%,
       oklch(0.2 0.05 250),
@@ -116,7 +116,14 @@
     );
     background-attachment: fixed;
   }
-  .active-nav {
-    @apply w-16! bg-foreground!;
-  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded-full hover:bg-muted-foreground transition-colors;
 }

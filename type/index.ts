@@ -12,4 +12,5 @@ export type personalProjectsVariableProjectType = {
   description: string;
   tags: string[];
   image: string;
+  link: string;
 }[];

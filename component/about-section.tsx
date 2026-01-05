@@ -11,21 +11,23 @@ export const AboutSection: FC = () => {
 
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         <p>
-          I&apos;m a developer passionate about crafting clean, efficient, and
-          user-centric applications. Currently focusing on my{" "}
-          <span className="text-foreground font-medium">OJT preparation</span>,
-          I strive to bridge the gap between complex logic and seamless user
-          interfaces.
+          4th-year IT student with six years of coding experience and a
+          self-taught mastery of React, Next.js, and PostgreSQL. While I&apos;m
+          comfortable across the full stack, backend development is where I
+          thrive, architecting systems, optimizing performance, and solving
+          complex problems give me that addictive thrill of breaking through
+          challenges.
         </p>
 
         <p>
-          My approach combines technical rigor with a curious mindset, always
-          looking for the most effective way to solve problems using modern
-          tools like{" "}
+          I recently built a reporting system for our capstone that will be
+          used, proving that the best projects solve real problems. Currently
+          expanding my stack to include Angular and PHP, and seeking OJT
+          opportunities in{" "}
           <span className="text-foreground font-medium">
-            React, Next.js, and Node.js
+            full-stack development
           </span>
-          .
+          . Based in San Pablo, Laguna, and open to remote work.
         </p>
       </div>
     </section>
