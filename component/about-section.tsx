@@ -11,12 +11,11 @@ export const AboutSection: FC = () => {
 
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         <p>
-          4th-year IT student with six years of coding experience and a
-          self-taught mastery of React, Next.js, and PostgreSQL. While I&apos;m
-          comfortable across the full stack, backend development is where I
-          thrive, architecting systems, optimizing performance, and solving
-          complex problems give me that addictive thrill of breaking through
-          challenges.
+          A self-taught mastery of React, Next.js, and PostgreSQL. While
+          I&apos;m comfortable across the full stack, backend development is
+          where I thrive, architecting systems, optimizing performance, and
+          solving complex problems give me that addictive thrill of breaking
+          through challenges.
         </p>
 
         <p>
