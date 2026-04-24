@@ -7,6 +7,21 @@ import { FC } from "react";
 export const PersonalProjects: FC = () => {
   const projects: personalProjectsVariableProjectType = [
     {
+      title: "Agro Trucking Mangement System",
+      description:
+        "Argo Trucking Management System is a centralized platform designed for construction business owners to streamline fleet monitoring and logistics. By digitizing trip scheduling and delivery tracking, the system eliminates the chaos of manual management, allowing owners to oversee trucks, personnel, and profits even if they're away from the construction site.",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "PostgreSQl",
+        "Laravel",
+        "Sanctum",
+      ],
+      image: "/Screenshot 2026-04-24 192650.png",
+      link: "https://tms.opalus.com.ph/",
+    },
+    {
       title: "AgroFarm Reporting System",
       description:
         "AgroFarm Reporting System is a web application that enables farmers in Calauan, Laguna to report crop damage online, allowing local agriculturists to respond faster despite distance and accessibility challenges.",

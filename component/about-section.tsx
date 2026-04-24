@@ -11,22 +11,28 @@ export const AboutSection: FC = () => {
 
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         <p>
-          A self-taught mastery of React, Next.js, and PostgreSQL. While
-          I&apos;m comfortable across the full stack, backend development is
-          where I thrive, architecting systems, optimizing performance, and
+          A self-taught mastery of React, Next.js, Laravel, and PostgreSQL.
+          While I&apos;m comfortable across the full stack, backend development
+          is where I thrive, architecting systems, optimizing performance, and
           solving complex problems give me that addictive thrill of breaking
           through challenges.
         </p>
 
         <p>
-          I recently built a reporting system for our capstone that will be
-          used, proving that the best projects solve real problems. Currently
-          expanding my stack to include Angular and PHP, and seeking OJT
+          I recently developed{" "}
+          <span className="text-foreground font-medium">Argo</span>, a
+          specialized Trucking Management System designed to streamline
+          logistics for construction firms. As the sole backend developer, I
+          architected ERD and the core logic for trip scheduling and delivery
+          tracking, while managing the full deployment using Nginx and PM2. This
+          project taught me that the best software solves high-stakes problems
+          like fleet monitoring and delivery monitoring. Currently, I am
+          expanding my stack to include Vue and Laravel as I seek JOB
           opportunities in{" "}
           <span className="text-foreground font-medium">
             full-stack development
           </span>
-          . Based in San Pablo, Laguna, and open to remote work.
+          .
         </p>
       </div>
     </section>
