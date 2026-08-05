@@ -1,23 +1,13 @@
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import Image from "next/image";
 
-export default function Hero({ heroImage }: { heroImage: string }) {
+export default function Hero() {
   return (
     <section
       id="top"
       className="relative min-h-screen w-full flex flex-col justify-center border-b border-border overflow-hidden"
     >
       <div className="absolute inset-0 grid-motif mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-      {heroImage && (
-        <div className="absolute inset-0 opacity-[0.08] mask-[radial-gradient(ellipse_80%_60%_at_70%_30%,#000,transparent)]">
-          <Image
-            src="https://media.base44.com/images/public/6a72e27418afa6567eed4b2e/78c0825ac_generated_97b61204.png"
-            alt=""
-            fill
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
 
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 lg:px-10 pt-24">
         <span className="font-mono-label text-primary mb-5 block fade-in">
