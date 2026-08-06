@@ -1,5 +1,6 @@
 import { projectSectionType } from "@/type";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const PROJECTS: projectSectionType[] = [
@@ -10,6 +11,7 @@ const PROJECTS: projectSectionType[] = [
       "A delivery booking and management system designed to replace manual delivery workflows with a centralized digital platform.",
     role: "Backend Developer",
     tags: ["Laravel", "PHP", "PostgreSQL", "REST API", "Nginx", "PM2"],
+    image: "Screenshot 2026-04-24 192650.png",
   },
   {
     slug: "agro-farm",
@@ -18,6 +20,7 @@ const PROJECTS: projectSectionType[] = [
       "A farm management platform designed to organize agricultural operations through structured digital workflows and centralized data management.",
     role: "Full-Stack Developer",
     tags: ["React / Next.js", "TypeScript", "Backend API", "Database System"],
+    image: "Screenshot 2026-01-03 192600.png",
   },
   {
     slug: "tidytask",
@@ -26,6 +29,7 @@ const PROJECTS: projectSectionType[] = [
       "A productivity-focused task management application that helps users organize and prioritize tasks based on urgency.",
     role: "Full-Stack Developer",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    image: "Screenshot 2026-01-03 192650.png",
   },
 ];
 
@@ -63,12 +67,18 @@ export default function Projects() {
               className="group relative flex flex-col border border-border bg-card hover:border-foreground/20 transition-colors"
             >
               <div className="relative aspect-video w-full bg-secondary overflow-hidden border-b border-border">
+                <Image
+                  src={`/${p.image}`}
+                  alt={p.name}
+                  fill
+                  className="opacity-10 group-hover:opacity-25 transition-opacity"
+                />
                 <div className="absolute inset-0 grid-motif opacity-50" />
                 <span className="absolute top-4 left-4 font-mono text-xs text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-mono text-xs text-zinc-700 uppercase tracking-widest">
+                  <span className="font-mono text-xs text-zinc-500 group-hover:text-zinc-400 uppercase tracking-widest">
                     Project Preview
                   </span>
                 </div>

@@ -24,6 +24,16 @@ export type projectSectionType = {
   description: string;
   role: string;
   tags: string[];
+  image: string;
+};
+
+type ContactLabel = "Email" | "GitHub" | "LinkedIn";
+
+export type ContactLinkType = {
+  icon: LucideIcon;
+  label: ContactLabel;
+  value: string;
+  href: string;
 };
 
 export type projectType = {
@@ -32,7 +42,7 @@ export type projectType = {
   tagline: string;
   role: string;
   period: string;
-  links: linkType;
+  links?: linkType;
   stack: stackType;
   overview: string;
   who: string;
@@ -57,9 +67,9 @@ export type caseStudyType = {
 };
 
 export type linkType = {
-  live: string;
-  github: string;
-  docs: string;
+  live?: string;
+  github?: string;
+  docs?: string;
 };
 
 export type LinkCardType = {

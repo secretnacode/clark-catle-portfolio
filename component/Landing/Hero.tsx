@@ -1,5 +1,6 @@
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 lg:px-10 pt-24">
         <span className="font-mono-label text-primary mb-5 block fade-in">
-          {"//"} Available for Junior Backend Roles
+          {"//"} Full-Stack Developer
         </span>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground mb-6 leading-[0.95] fade-in">
@@ -29,34 +30,33 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4 fade-in">
-          <a
+          <Link
             href="#projects"
             className="inline-flex items-center gap-2 h-12 px-7 bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors group min-h-11"
           >
             View My Projects
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/"
             className="inline-flex items-center gap-2 h-12 px-7 border border-border text-foreground text-sm font-semibold hover:border-foreground/40 transition-colors min-h-11"
+            download="Clark_David_Catle_Resume.pdf"
           >
             <FileText className="w-4 h-4" />
             Download Resume
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="inline-flex items-center gap-2 h-12 px-7 text-muted-foreground text-sm font-semibold hover:text-foreground transition-colors min-h-11"
           >
             <Mail className="w-4 h-4" />
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="hidden lg:flex absolute bottom-8 right-10 flex-col items-end gap-2 font-mono text-xs text-zinc-600">
-        <p>LOC: 14.0708° N, 121.3248° E</p>
-        <p>STACK: Laravel // Next.js // PostgreSQL</p>
-        <p className="text-primary">STATUS: Ready to Deploy</p>
+        <p>STACK: Laravel // Next.js // React // Vue // PostgreSQL // MySQL</p>
       </div>
     </section>
   );

@@ -10,12 +10,7 @@ export const projects: projectType[] = [
     tagline:
       "A delivery management platform that digitizes truck booking workflows through centralized scheduling, API-driven architecture, and reliable data management.",
     role: "Backend Developer",
-    period: "Capstone Project",
-    links: {
-      live: "#",
-      github: "https://github.com",
-      docs: "#",
-    },
+    period: "Internship",
     stack: {
       frontend: [],
       backend: [
@@ -38,10 +33,10 @@ export const projects: projectType[] = [
         "Bookings and delivery records tracked on paper or scattered spreadsheets.",
         "No centralized view of schedules, leading to double-booking and gaps.",
         "Difficult to trace delivery history or audit past transactions.",
-        "Manual communication between dispatchers and drivers caused delays and errors.",
+        "Manual scheduling caused truck double bookings and resource conflicts.",
       ],
       statement:
-        "Without a centralized system, delivery operations suffered from inconsistent records, scheduling conflicts, and limited visibility into day-to-day activity — making it hard to scale or audit reliably.",
+        "Without a centralized system, delivery operations suffered from inconsistent records, scheduling conflicts, and limited visibility into day-to-day activity that makes it hard to scale or audit reliably.",
     },
     goals: [
       "Replace manual workflows with a centralized digital platform.",
@@ -116,11 +111,7 @@ export const projects: projectType[] = [
         "Constraints and indexes added to preserve data integrity and improve query performance.",
         "Historical records kept immutable where accuracy mattered, separating live data from archived data.",
       ],
-      frontend: [
-        "Component structure mirrored backend resources for predictable data flow.",
-        "State management handled at the view level with API calls aligned to endpoint boundaries.",
-        "UI decisions prioritized clarity of scheduling information and status visibility.",
-      ],
+      frontend: [],
     },
     challenges: [
       {
@@ -163,12 +154,16 @@ export const projects: projectType[] = [
     tagline:
       "A farm management platform that organizes agricultural operations through structured digital workflows and centralized data management.",
     role: "Full-Stack Developer",
-    period: "Project",
-    links: { live: "#", github: "https://github.com", docs: "#" },
+    period: "Capstone Project",
+    links: {
+      live: "https://report-system-cmm.vercel.app/",
+      github: "https://github.com/clark-catle/updatedCapstone",
+      docs: "https://github.com/clark-catle/updatedCapstone",
+    },
     stack: {
       frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-      backend: ["Backend API", "Authentication"],
-      database: ["Database System", "Data Modeling"],
+      backend: ["Backend API", "Clerk"],
+      database: ["NeonDB"],
       deployment: ["Vercel"],
     },
     overview:
@@ -183,7 +178,7 @@ export const projects: projectType[] = [
         "Manual reporting consumed time and was prone to gaps.",
       ],
       statement:
-        "Fragmented record-keeping made it hard to plan, track, and learn from agricultural operations — limiting the ability to make informed decisions across seasons.",
+        "Fragmented record-keeping made it hard to plan, track, and learn from agricultural operations that is limiting the ability to make informed decisions across seasons.",
     },
     goals: [
       "Centralize operational records into a single platform.",
@@ -295,7 +290,11 @@ export const projects: projectType[] = [
       "A productivity-focused task management application that helps users organize and prioritize tasks based on urgency.",
     role: "Full-Stack Developer",
     period: "Project",
-    links: { live: "#", github: "https://github.com", docs: "#" },
+    links: {
+      live: "https://tidy-task-kappa.vercel.app/",
+      github: "https://github.com/clark-catle/tidyTask",
+      docs: "https://github.com/clark-catle/tidyTask",
+    },
     stack: {
       frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       backend: ["Next.js API Routes", "Authentication"],

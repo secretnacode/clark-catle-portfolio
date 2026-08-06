@@ -55,11 +55,6 @@ export default function About() {
                 centers on clean code, efficient architecture, and practical
                 solutions to real problems.
               </p>
-              <p>
-                I&apos;m looking for junior backend or full-stack roles where I
-                can contribute to professional engineering teams and continue
-                growing as a developer.
-              </p>
             </div>
           </div>
 

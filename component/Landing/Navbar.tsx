@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X, FileText } from "lucide-react";
+import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -31,33 +32,34 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <a
+        <Link
           href="#top"
           className="font-mono text-sm tracking-tight text-foreground hover:text-primary transition-colors"
         >
           <span className="text-primary">/</span>clark.catle
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-7">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <a
-                  href={l.href}
+                <Link
+                  href={`/${l.href}`}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-          <a
-            href="#contact"
+          <Link
+            href="/"
             className="inline-flex items-center gap-2 h-10 px-5 bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors min-h-10"
+            download="Clark_David_Catle_Resume.pdf"
           >
             <FileText className="w-4 h-4" />
             Download Resume
-          </a>
+          </Link>
         </div>
 
         <button
@@ -74,24 +76,24 @@ export default function Navbar() {
           <ul className="px-6 py-4 space-y-3">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <a
+                <Link
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="block text-sm text-muted-foreground hover:text-foreground py-2"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a
+              <Link
                 href="#contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center gap-2 h-10 px-5 bg-primary text-primary-foreground text-sm font-semibold"
               >
                 <FileText className="w-4 h-4" />
                 Download Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

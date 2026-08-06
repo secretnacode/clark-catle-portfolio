@@ -61,7 +61,6 @@ export default async function Page({
       <main className="min-h-screen bg-background">
         <Navbar />
         <ProjectHero project={project} />
-
         {/* 2. Overview */}
         <CaseStudySection index={2} label="Overview" title="Project Overview">
           <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
@@ -82,7 +81,6 @@ export default async function Page({
             </div>
           </div>
         </CaseStudySection>
-
         {/* 3. Problem Statement */}
         <CaseStudySection index={3} label="Problem" title="Problem Statement">
           <p className="text-muted-foreground leading-relaxed mb-6 text-lg border-l-2 border-border pl-5">
@@ -95,12 +93,10 @@ export default async function Page({
             <Bullets items={project.problem.limitations} />
           </div>
         </CaseStudySection>
-
         {/* 4. Goals */}
         <CaseStudySection index={4} label="Goals" title="Goals & Objectives">
           <Bullets items={project.goals} />
         </CaseStudySection>
-
         {/* 5. Role */}
         <CaseStudySection
           index={5}
@@ -120,12 +116,10 @@ export default async function Page({
           </span>
           <Bullets items={project.responsibilities} />
         </CaseStudySection>
-
         {/* 6. Tech Stack */}
         <CaseStudySection index={6} label="Stack" title="Technology Stack">
           <TechStack stack={project.stack} />
         </CaseStudySection>
-
         {/* 7. Architecture */}
         <CaseStudySection
           index={7}
@@ -135,7 +129,6 @@ export default async function Page({
         >
           <Architecture architecture={project.architecture} />
         </CaseStudySection>
-
         {/* 8. Features */}
         <CaseStudySection
           index={8}
@@ -145,7 +138,6 @@ export default async function Page({
         >
           <Features features={project.features} />
         </CaseStudySection>
-
         {/* 9. Implementation */}
         <CaseStudySection
           index={9}
@@ -155,7 +147,6 @@ export default async function Page({
         >
           <Implementation implementation={project.implementation} />
         </CaseStudySection>
-
         {/* 10. Challenges */}
         <CaseStudySection
           index={10}
@@ -165,19 +156,18 @@ export default async function Page({
         >
           <Challenges challenges={project.challenges} />
         </CaseStudySection>
-
         {/* 11. Results */}
         <CaseStudySection index={11} label="Results" title="Results & Impact">
           <Bullets items={project.results} />
         </CaseStudySection>
-
         {/* 12. Lessons */}
         <CaseStudySection index={12} label="Lessons" title="Lessons Learned">
           <Bullets items={project.lessons} />
         </CaseStudySection>
 
+        {/* commented first because all project doesnt have a proof (a hussle to do) */}
         {/* 13. Screenshots */}
-        <CaseStudySection
+        {/* <CaseStudySection
           index={13}
           label="Visuals"
           title="Screenshots & Demo"
@@ -198,11 +188,9 @@ export default async function Page({
               </div>
             ))}
           </div>
-        </CaseStudySection>
-
+        </CaseStudySection> */}
         {/* 14. Links */}
-        <LinksFooter link={project.links} />
-
+        {project.links && <LinksFooter index={13} link={project.links} />}
         <Footer />
       </main>
     </main>

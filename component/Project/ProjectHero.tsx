@@ -58,9 +58,9 @@ export default function ProjectHero({ project }: { project: projectType }) {
         </div>
 
         <div className="flex flex-wrap gap-2 mb-10">
-          {allTags.map((t) => (
+          {allTags.map((t, i) => (
             <span
-              key={t}
+              key={i}
               className="text-[11px] font-mono py-1 px-2 border border-border text-muted-foreground uppercase tracking-wider"
             >
               {t}
@@ -68,26 +68,32 @@ export default function ProjectHero({ project }: { project: projectType }) {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-11 px-6 bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors min-h-11"
-          >
-            <Github className="w-4 h-4" />
-            GitHub Repository
-          </a>
-          <a
-            href={project.links.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-11 px-6 border border-border text-foreground text-sm font-semibold hover:border-foreground/40 transition-colors min-h-11"
-          >
-            <ExternalLink className="w-4 h-4" />
-            Live Demo
-          </a>
-        </div>
+        {project.links && (
+          <div className="flex flex-wrap gap-4">
+            {project.links.github && (
+              <Link
+                href={project.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 h-11 px-6 bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors min-h-11"
+              >
+                <Github className="w-4 h-4" />
+                GitHub Repository
+              </Link>
+            )}
+            {project.links.live && (
+              <Link
+                href={project.links.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 h-11 px-6 border border-border text-foreground text-sm font-semibold hover:border-foreground/40 transition-colors min-h-11"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </Link>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );
