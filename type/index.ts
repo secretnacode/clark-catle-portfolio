@@ -1,3 +1,6 @@
+import { LucideIcon } from "lucide-react";
+import { ReactNode } from "react";
+
 export type projectCardPropType = {
   imageSrc: string;
   imageAlt: string;
@@ -14,6 +17,14 @@ export type personalProjectsVariableProjectType = {
   image: string;
   link: string;
 }[];
+
+export type projectSectionType = {
+  slug: string;
+  name: string;
+  description: string;
+  role: string;
+  tags: string[];
+};
 
 export type projectType = {
   slug: string;
@@ -37,25 +48,40 @@ export type projectType = {
   lessons: string[];
 };
 
-type linkType = {
+export type caseStudyType = {
+  index: number;
+  label: string;
+  title: string;
+  intro?: string;
+  children: ReactNode;
+};
+
+export type linkType = {
   live: string;
   github: string;
   docs: string;
 };
 
-type stackType = {
+export type LinkCardType = {
+  icon: LucideIcon;
+  label: string;
+  value: string;
+  href: string;
+};
+
+export type stackType = {
   frontend: string[];
   backend: string[];
   database: string[];
   deployment: string[];
 };
 
-type problemType = {
+export type problemType = {
   limitations: string[];
   statement: string;
 };
 
-type architectureType = {
+export type architectureType = {
   flow: {
     label: string;
     note: string;
@@ -63,21 +89,27 @@ type architectureType = {
   explanation: string;
 };
 
-type featuresType = {
+export type featuresType = {
   name: string;
   description: string;
   implementation: string;
 };
 
-type implementationType = {
+export type implementationType = {
   backend: string[];
   database: string[];
   frontend: string[];
 };
 
-type challengesType = {
+export type challengesType = {
   challenge: string;
   impact: string;
   solution: string;
   decision: string;
+};
+
+export type fieldType = {
+  label: string;
+  text: string;
+  highlight?: boolean;
 };

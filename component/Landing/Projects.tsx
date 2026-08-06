@@ -1,15 +1,8 @@
+import { projectSectionType } from "@/type";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-type projectType = {
-  slug: string;
-  name: string;
-  description: string;
-  role: string;
-  tags: string[];
-}[];
-
-const PROJECTS: projectType = [
+const PROJECTS: projectSectionType[] = [
   {
     slug: "argo",
     name: "Opalus / Argo",

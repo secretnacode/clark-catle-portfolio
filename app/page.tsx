@@ -1,12 +1,12 @@
-import About from "@/component/LandingPage/About";
-import Certifications from "@/component/LandingPage/Certifications";
-import Contact from "@/component/LandingPage/Contact";
-import Experience from "@/component/LandingPage/Experience";
-import Footer from "@/component/LandingPage/Footer";
-import Hero from "@/component/LandingPage/Hero";
-import Navbar from "@/component/LandingPage/Navbar";
-import Projects from "@/component/LandingPage/Projects";
-import Skills from "@/component/LandingPage/Skills";
+import About from "@/component/Landing/About";
+import Certifications from "@/component/Landing/Certifications";
+import Contact from "@/component/Landing/Contact";
+import Experience from "@/component/Landing/Experience";
+import Footer from "@/component/Landing/Footer";
+import Hero from "@/component/Landing/Hero";
+import Navbar from "@/component/Landing/Navbar";
+import Projects from "@/component/Landing/Projects";
+import Skills from "@/component/Landing/Skills";
 
 export default function Home() {
   return (
